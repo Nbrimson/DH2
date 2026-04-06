@@ -106,6 +106,19 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 		   this.modData("Learnsets", "butterfree").learnset.strengthsap = ["9L1"];
 		   this.modData("Learnsets", "butterfree").learnset.powdergale = ["9L1"];
 
+		   this.modData("Learnsets", "gyarados").learnset.acrobatics = ["9L1"];
+		   this.modData("Learnsets", "gyarados").learnset.ragingtorrent = ["9L1"];
+
+		   this.modData("Learnsets", "cloyster").learnset.bulletpunch = ["9L1"];
+		   this.modData("Learnsets", "cloyster").learnset.curse = ["9L1"];
+		   this.modData("Learnsets", "cloyster").learnset.explosion = ["9L1"];
+		   this.modData("Learnsets", "cloyster").learnset.ironhead = ["9L1"];
+		   this.modData("Learnsets", "cloyster").learnset.splashback = ["9L1"];
+
+		   this.modData("Learnsets", "tentacruel").learnset.darkpulse = ["9L1"];
+		   this.modData("Learnsets", "tentacruel").learnset.foulplay = ["9L1"];
+		   this.modData("Learnsets", "tentacruel").learnset.nastyplot = ["9L1"];
+
 		delete this.modData('Learnsets', 'alakazam').learnset.focusblast;
 		delete this.modData('Learnsets', 'alakazam').learnset.nastyplot;
 
@@ -144,6 +157,12 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 
 		delete this.modData('Learnsets', 'seadra').learnset.blizzard;
 		delete this.modData('Learnsets', 'seadra').learnset.icebeam;
+
+		delete this.modData('Learnsets', 'cloyster').learnset.iceshard;
+		delete this.modData('Learnsets', 'cloyster').learnset.lifedew;
+		delete this.modData('Learnsets', 'cloyster').learnset.shellsmash;
+
+		delete this.modData('Learnsets', 'tentacruel').learnset.scald;
 
 		// Removing the prevos' moves
 		delete this.modData('Learnsets', 'gastly').learnset.nastyplot;
@@ -195,7 +214,54 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 
 		delete this.modData('Learnsets', 'horsea').learnset.blizzard;
 		delete this.modData('Learnsets', 'horsea').learnset.icebeam;
+		
+		delete this.modData('Learnsets', 'shellder').learnset.iceshard;
+		delete this.modData('Learnsets', 'shellder').learnset.lifedew;
+		delete this.modData('Learnsets', 'shellder').learnset.shellsmash;
+		
+		delete this.modData('Learnsets', 'tentacool').learnset.scald;
+
+		this.modData("Learnsets", "raticate").learnset.gunkshot = ["9L1"];
+		this.modData("Learnsets", "raticate").learnset.poisonjab = ["9L1"];
+		this.modData("Learnsets", "raticate").learnset.sludgebomb = ["9L1"];
+		this.modData("Learnsets", "raticate").learnset.sludgewave = ["9L1"];
+		this.modData("Learnsets", "raticate").learnset.sludge = ["9L1"];
+		this.modData("Learnsets", "raticate").learnset.closecombat = ["9L1"];
+		this.modData("Learnsets", "raticate").learnset.pestspread = ["9L1"];
+		delete this.modData('Learnsets', 'raticate').learnset.swordsdance;
+		delete this.modData('Learnsets', 'raticate').learnset.stompingtantrum;
+		delete this.modData('Learnsets', 'raticate').learnset.suckerpunch;
+		delete this.modData('Learnsets', 'raticate').learnset.pursuit;
+		delete this.modData('Learnsets', 'raticate').learnset.zenheadbutt;
+		delete this.modData('Learnsets', 'rattata').learnset.swordsdance;
+		delete this.modData('Learnsets', 'rattata').learnset.stompingtantrum;
+		delete this.modData('Learnsets', 'rattata').learnset.suckerpunch;
+		delete this.modData('Learnsets', 'rattata').learnset.pursuit;
+		delete this.modData('Learnsets', 'rattata').learnset.zenheadbutt;
+		this.modData("Learnsets", "kangaskhan").learnset.familyonslaught = ["9L1"];
+		this.modData("Learnsets", "kangaskhan").learnset.dragontail = ["9L1"];
+		this.modData("Learnsets", "kangaskhan").learnset.dragonclaw = ["9L1"];
+		this.modData("Learnsets", "kangaskhan").learnset.dracometeor = ["9L1"];
+		this.modData("Learnsets", "kangaskhan").learnset.dragondance = ["9L1"];
+		this.modData("Learnsets", "kangaskhan").learnset.uturn = ["9L1"];
+		this.modData("Learnsets", "farfetchd").learnset.bulkup = ["9L1"];
+		this.modData("Learnsets", "farfetchd").learnset.sacredsword = ["9L1"];
+		delete this.modData('Learnsets', 'farfetchd').learnset.toxic;
+		this.modData("Learnsets", "kangaskhan").learnset.familyonslaught = ["9L1"];
+		this.modData("Learnsets", "kangaskhan").learnset.dragontail = ["9L1"];
+		this.modData("Learnsets", "kangaskhan").learnset.dragonclaw = ["9L1"];
+		this.modData("Learnsets", "kangaskhan").learnset.dracometeor = ["9L1"];
+		this.modData("Learnsets", "kangaskhan").learnset.dragondance = ["9L1"];
+		this.modData("Learnsets", "kangaskhan").learnset.uturn = ["9L1"];
+		this.modData("Learnsets", "farfetchd").learnset.bulkup = ["9L1"];
+		this.modData("Learnsets", "farfetchd").learnset.sacredsword = ["9L1"];
+		delete this.modData('Learnsets', 'farfetchd').learnset.toxic;
+		this.modData("Learnsets", "lapras").learnset.escort = ["9L1"];
+		this.modData("Learnsets", "lapras").learnset.wish = ["9L1"];
+		this.modData("Learnsets", "tauros").learnset.escort = ["9L1"];
+		this.modData("Learnsets", "tauros").learnset.headlongrush = ["9L1"];
+		this.modData("Learnsets", "marowak").learnset.knockoff = ["9L1"];
+		this.modData("Learnsets", "marowak").learnset.vengefulbone = ["9L1"];
+		this.modData("Learnsets", "marowak").learnset.closecombat = ["9L1"];
 	},
-
-
 };
