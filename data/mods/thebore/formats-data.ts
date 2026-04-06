@@ -977,7 +977,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 	dragonite: {
 		inherit: true,
-		tier: "OU",
+		tier: "Uber",
 	},
 	mewtwo: {
 		inherit: true,
@@ -3977,7 +3977,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 	kommoo: {
 		inherit: true,
-		tier: "OU",
+		tier: "Uber",
 	},
 	tapukoko: {
 		inherit: true,
