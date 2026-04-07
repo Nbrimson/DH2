@@ -1898,6 +1898,70 @@ export const Moves: {[moveid: string]: MoveData} = {
             this.add('-anim', target, "Thunderclap", target);
         },
 	},
+	elenova: {
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Elenova",
+		shortDesc: "This move's type depends on the secondary type of the user.",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		onModifyType(move, pokemon) {
+			const types = pokemon.getTypes();
+			const secondary = types[1];
+			move.type = secondary || 'Normal';
+		},
+		onPrepareHit(target, source, move) {
+			const types = source.getTypes();
+			const secondary = types[1];
+			this.attrLastMove('[still]');
+			switch (secondary) {
+				case 'Dragon':
+					this.add('-anim', source, "Dragon Pulse", target);
+					break;
+				case 'Fire':
+					this.add('-anim', source, "Mystical Fire", target);
+					break;
+				case 'Ice':
+					this.add('-anim', source, "Ice Beam", target);
+					break;
+				case 'Electric':
+					this.add('-anim', source, "Thunderbolt", target);
+					break;
+				case 'Water':
+					this.add('-anim', source, "Hydro Pump", target);
+					break;
+				default:
+					// No secondary type → Normal animation
+					this.add('-anim', source, "Hyper Voice", target);
+					break;
+			}
+		},
+	},
+	lashingtongue: {
+		accuracy: 100,
+		basePower: 65,
+		category: "Physical",
+		name: "Lashing Tongue",
+		shortDesc: "Deals 2x damage if target is inflicted with a non-volatile status condition.",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, contact: 1},
+		secondary: null,
+		target: "normal",
+		type: "Water",
+		basePowerCallback(pokemon, target, move) {
+			if (target.status || target.hasAbility('comatose')) {
+				this.debug('Lashing Tongue BP doubled from status condition');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+	},
 	/*
 	Edits
 	*/
@@ -2226,6 +2290,14 @@ export const Moves: {[moveid: string]: MoveData} = {
 	zenheadbutt: {
 		inherit: true,
 		accuracy: 100,
+	},
+	ominouswind: {
+		inherit: true,
+		accuracy: 100,
+		basePower: 90,
+		pp: 10,
+		flags: {protect: 1, mirror: 1, metronome: 1, wind: 1},
+		secondary: null,
 	},
 	steamroller: {
 		inherit: true,
