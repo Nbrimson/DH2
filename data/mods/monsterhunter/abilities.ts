@@ -3,6 +3,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onAfterMoveSecondarySelfPriority: -1,
 		onAfterMoveSecondarySelf(pokemon, target, move) {
 			if (move.flags['sound']) {
+				this.add('-ability', pokemon, 'Soothing Song');
 				for (const ally of pokemon.alliesAndSelf()) {
 					this.heal(ally.baseMaxhp / 8, ally);
 				}
