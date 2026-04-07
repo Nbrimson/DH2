@@ -2470,7 +2470,7 @@ export const Pokedex: {[k: string]: ModdednameData} = {
 		num: 195,
 		name: "Rebidiora",
 		types: ["Dragon", "Electric"],
-		baseStats: {hp: 98, atk: 88, def: 98, spa: 120, spd: 118, spe: 118},
+		baseStats: {hp: 98, atk: 88, def: 98, spa: 120, spd: 88, spe: 118},
 		abilities: {0: "Lightning Rod", H: "Magnet Pull"},
 		weightkg: 150.0,
 		tags: ["Elder Dragon"],
