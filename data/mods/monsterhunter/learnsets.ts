@@ -7054,6 +7054,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			amnesia: ["9L1"],
 			curse: ["9L1"],
 			hypnosis: ["9L1"],
+			darkvoid: ["9L1"],
 			calmmind: ["9L1"],
 			nastyplot: ["9L1"],
 			gravity: ["9L1"],
