@@ -109,13 +109,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "Under Sandstorm/Red HP/Booster Energy: Highest stat 1.3x (1.5x if Speed).",
 	},
 	consumption: {
-		onSourceAfterFaint(target, source, effect) {
-			if (effect && effect.effectType === 'Move') {
+		onAfterMoveSecondarySelf(source, target, move) {
+			if (move?.effectType === 'Move' && target?.hp === 0) {
 				this.heal(source.baseMaxhp / 4, source);
 			}
 		},
 		name: "Consumption",
-		desc: "When this Pokemon KOs an opponent with a direct attack, it recovers 25% of its max HP.",
 		shortDesc: "Heals 25% HP on KO.",
 	},
 	redsoul: {
