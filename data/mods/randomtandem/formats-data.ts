@@ -62,4 +62,13 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	moltres: {
 		tier: "Random",
 	},
+	arcaninehisui: {
+		tier: "Random",
+	},
+	ironboulder: {
+		tier: "Random",
+	},
+	tinglu: {
+		tier: "Random",
+	},
 };
