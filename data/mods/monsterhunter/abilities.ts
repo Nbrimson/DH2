@@ -1,5 +1,5 @@
 export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
-	soulfulnoise: {
+	soothingsong: {
 		onAfterMoveSecondarySelfPriority: -1,
 		onAfterMoveSecondarySelf(pokemon, target, move) {
 			if (move.flags['sound']) {
@@ -9,7 +9,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: {},
-		name: "Soulful Noise",
+		name: "Soothing Song",
 		shortDesc: "When this Pokémon uses a sound move, it and its allies heal 12.5% of their max HP.",
 	},
 	sunkissed: {
@@ -278,6 +278,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.damage(mon.baseMaxhp / 8, mon, target);
 			}
 		},
+	},
+	whitegale: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (
+				move?.type === 'Flying' &&
+				(pokemon.hp === pokemon.maxhp || pokemon.hp <= pokemon.maxhp / 2)
+			) {
+				return priority + 1;
+			}
+		},
+		shortDesc: "Flying moves get +1 priority at full HP or at 50% HP or less.",
+		flags: {},
+		name: "White Gale",
 	},
 	absolutezero: {
 		onStart(source) {

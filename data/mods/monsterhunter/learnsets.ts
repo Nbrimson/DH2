@@ -73,6 +73,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			brickbreak: ["9M"],
 			stuffcheeks: ["9M"],
 			bulldoze: ["9M"],
+			metalclaw: ["9L1"],
 			charm: ["9M"],
 			closecombat: ["9M"],
 			confide: ["9M"],
@@ -887,6 +888,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			swordsdance: ["9L1"],
 			aerialace: ["9M"],
 			avalanche: ["9M"],
+			metalclaw: ["9L1"],
 			blizzard: ["9M"],
 			brickbreak: ["9M"],
 			bulletpunch: ["9M"],
@@ -2035,6 +2037,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	nargacuga: {
 		learnset: {
 			acrobatics: ["9L1"],
+			metalclaw: ["9L1"],
 			thousandblades: ["9L1"],
 			agility: ["9L1"],
 			steelwing: ["9L1"],
@@ -2317,6 +2320,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			swordsdance: ["9L1"],
 			aquajet: ["9L15"],
 			attract: ["9M"],
+			metalclaw: ["9L1"],
 			aurasphere: ["9M", "9L42"],
 			bodyslam: ["9M"],
 			bounce: ["9L49", "9M"],
@@ -2671,7 +2675,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			iciclecrash: ["9M"],
 			iciclespear: ["9M"],
 			icywind: ["9M", "9L24"],
-			irontail: ["9M"],
+			metalclaw: ["9L1"],
 			knockoff: ["9M"],
 			kowtowcleave: ["9M"],
 			lashout: ["9M"],
@@ -3112,6 +3116,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			astonish: ["9L1"],
 			stuffcheeks: ["9L1"],
 			shadowclaw: ["9L1"],
+			metalclaw: ["9L1"],
 			dragonclaw: ["9L1"],
 			bulkup: ["9L1"],
 			attract: ["9M"],
@@ -3960,6 +3965,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	lucacuga: {
 		learnset: {
 			acupressure: ["9L1"],
+			metalclaw: ["9L1"],
 			agility: ["9L1"],
 			steelwing: ["9L1"],
 			acidspray: ["9M"],
@@ -5995,6 +6001,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	gogmazios: {
 		learnset: {
+			metalclaw: ["9L1"],
 			acupressure: ["9L1"],
 			irondefense: ["9L1"],
 			anchorshot: ["9L1"],
@@ -7618,6 +7625,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			powertrip: ["9L1"],
 			honeclaws: ["9L1"],
 			swordsdance: ["9L1"],
+			metalclaw: ["9L1"],
 			agility: ["9L1"],
 			cruelclaw: ["9L1"],
 			attract: ["9L1"],
@@ -9422,6 +9430,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			swordsdance: ["9L1"],
 			honeclaws: ["9L1"],
 			chipaway: ["9L1"],
+			metalclaw: ["9L1"],
 			trailblaze: ["9L1"],
 			powertrip: ["9L1"],
 			crunch: ["9L1"],
@@ -9832,6 +9841,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	molgrex: {
 		learnset: {
 			astonish: ["9L1"],
+			metalclaw: ["9L1"],
 			howl: ["9L1"],
 			bulkup: ["9L1"],
 			bite: ["9L1"],
@@ -9951,6 +9961,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			haze: ["9L1"],
 			rockpolish: ["9L1"],
 			quicksandbreath: ["9L1"],
+			metalclaw: ["9L1"],
 			airslash: ["9L1"],
 			defog: ["9L1"],
 			astonish: ["9L1"],
@@ -10253,6 +10264,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 		learnset: {
 			acupressure: ["9L1"],
 			steelwing: ["9L1"],
+			metalclaw: ["9L1"],
 			swordsdance: ["9L1"],
 			agility: ["9L1"],
 			growth: ["9L1"],
@@ -11664,6 +11676,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	ebogaron: {
 		learnset: {
 			acrobatics: ["9L1"],
+			metalclaw: ["9L1"],
 			attract: ["9L1"],
 			agility: ["9L1"],
 			honeclaws: ["9L1"],
@@ -11914,6 +11927,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			accelerock: ["9L1"],
 			swordsdance: ["9L1"],
 			stoneaxe: ["9L1"],
+			metalclaw: ["9L1"],
 			aquacutter: ["9L1"],
 			attract: ["9L1"],
 			bodyslam: ["9L1"],

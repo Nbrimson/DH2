@@ -2049,7 +2049,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 		desc: "30% chance to inflict bleed.",
 		shortDesc: "30% chance to inflict bleed.",
 		secondary: {
-			chance: 10,
+			chance: 30,
+			volatileStatus: 'bleeding',
+		},
+	},
+	metalclaw: {
+		inherit: true,
+		accuracy: 100,
+		pp: 15,
+		desc: "30% chance to inflict bleed.",
+		shortDesc: "30% chance to inflict bleed.",
+		secondary: {
+			chance: 30,
 			volatileStatus: 'bleeding',
 		},
 	},
@@ -2362,6 +2373,16 @@ export const Moves: {[moveid: string]: MoveData} = {
 		viable: true,
 		basePower: 110,
 		accuracy: 100,
+	},
+	magnetbomb: {
+		inherit: true,
+		viable: true,
+		basePower: 70, 
+		isNonstandard: null,
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Steel') return 1;
+		},
+		shortDesc: "Super effective on Steel.",
 	},
 	steelwing: {
 		inherit: true,
