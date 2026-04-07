@@ -562,9 +562,9 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		num: -5,
 		gen: 9,
 		rating: 3,
-		shortDesc: "Restores 1/3 max HP at 1/2 HP or less once. -1 Spe if hit by Knock Off.",
+		shortDesc: "Restores 1/3 max HP at 25% HP or less once. -1 Spe if hit by Knock Off.",
 		onUpdate(pokemon) {
-			if (pokemon.hp <= pokemon.maxhp / 2) {
+			if (pokemon.hp <= pokemon.maxhp / 4) {
 				if (pokemon.useItem()) {
 					this.heal(pokemon.baseMaxhp / 3);
 				}
