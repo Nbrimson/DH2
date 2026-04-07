@@ -954,4 +954,127 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 			],
 		],
 	},
+	arcaninehisui: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'golisopod',
+					item: 'heavydutyboots',
+					ability: 'toughclaws',
+					teraType: 'Fighting',
+				},
+				['firstimpression', 'liquidation', 'leechlife', 'closecombat']
+			],
+			[
+				{
+					species: 'calyrexice',
+					item: 'weaknesspolicy',
+					ability: 'asoneice',
+					teraType: ['water', 'Steel'],
+				},
+				['iciclecrash', 'agility', 'highhorsepower', 'closecombat']
+			],
+			[
+				{
+					species: 'ogerponwellspring',
+					item: 'wellspringmask',
+					ability: 'waterabsorb',
+					teraType: 'water',
+				},
+				['ivycudgel', 'powerwhip'], ['knockoff', 'playrough', 'spikes']
+			],
+			[
+				{
+					species: 'corviknight',
+					item: 'leftovers',
+					ability: 'pressure',
+					teraType: 'dragon',
+				},
+				['bravebird', 'uturn', 'roost', 'whirlwind']
+			],
+		],
+	},
+	ironboulder: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'keldeoresolute',
+					item: 'leftovers',
+					ability: 'justified',
+					teraType: ['steel', 'electric'],
+				},
+				['electrodrift', 'calmmind', 'surf', 'secretsword']
+			],
+			[
+				{
+					species: 'buzzwole',
+					item: ['rockyhelmet', 'leftovers'],
+					ability: 'beastboost',
+					teraType: ['water', 'Steel'],
+				},
+				['roost', 'drainpunch'], ['icepunch', 'spikes', 'earthquake', 'toxic']
+			],
+			[
+				{
+					species: 'chiyu',
+					item: 'heavydutyboots',
+					ability: 'flashfire',
+					teraType: ['grass', 'fighting'],
+				},
+				['darkpulse', 'fireblast', 'nastyplot', 'terablast']
+			],
+			[
+				{
+					species: 'Shaymin-Sky',
+					item: 'heavydutyboots',
+					ability: 'serenegrace',
+					teraType: ['flying', 'steel'],
+				},
+				['bleakwindstorm', 'seedflare', 'earthpower', 'healingwish']
+			],
+		],
+	},
+	tinglu: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'ironhands',
+					item: 'roseliberry',
+					ability: 'levitate',
+					teraType: 'fire',
+				},
+				['drainpunch', 'swordsdance', 'thunderpunch', 'icepunch']
+			],
+			[
+				{
+					species: 'screamtail',
+					item: ['heavydutyboots', 'leftovers'],
+					ability: 'pixilate',
+					teraType: 'Steel',
+				},
+				['boomburst', 'wish', 'protect', 'psychicnoise']
+			],
+			[
+				{
+					species: 'celesteela',
+					item: 'leftovers',
+					ability: 'waterabsorb',
+					teraType: 'dragon',
+				},
+				['heavyslam', 'leechseed', 'flamethrower', 'protect']
+			],
+			[
+				{
+					species: 'Skeledirge',
+					item: 'heavydutyboots',
+					ability: 'unaware',
+					teraType: 'fairy',
+				},
+				['torchsong', 'slackoff', 'infernalparade', 'willowisp']
+			],
+		],
+	},
 };
