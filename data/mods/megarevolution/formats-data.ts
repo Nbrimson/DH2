@@ -4842,7 +4842,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	},
 	terapagosstellar: {
 		inherit: true,
-		tier: "Illegal",
+		tier: "Uber",
 	},
 	pecharunt: {
 		inherit: true,
