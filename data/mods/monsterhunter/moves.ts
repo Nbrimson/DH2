@@ -2055,6 +2055,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	metalclaw: {
 		inherit: true,
+		basePower: 80,
 		accuracy: 100,
 		pp: 15,
 		desc: "30% chance to inflict bleed.",
@@ -2309,6 +2310,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		flags: {protect: 1, mirror: 1, metronome: 1, wind: 1},
 		secondary: null,
+		shortDesc: "No additional effect.",
 	},
 	steamroller: {
 		inherit: true,
@@ -2377,6 +2379,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	magnetbomb: {
 		inherit: true,
 		viable: true,
+		accuracy: 100,
 		basePower: 70, 
 		isNonstandard: null,
 		onEffectiveness(typeMod, target, type) {
