@@ -8356,6 +8356,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			blazingtorque: ["9L1"],
 			trailblaze: ["9L1"],
 			agility: ["9L1"],
+			earthquake: ["9M"],
 			combattorque: ["9L1"],
 			sleeppowder: ["9L1"],
 			playrough: ["9L1"],
@@ -9086,6 +9087,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 		learnset: {
 			acrobatics: ["9L1"],
 			chargebeam: ["9L1"],
+			ominouswind: ["9L1"],
 			haze: ["9L1"],
 			airslash: ["9L1"],
 			nastyplot: ["9L1"],
@@ -13568,6 +13570,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			agility: ["9L1"],
 			airslash: ["9L1"],
 			bleakwindstorm: ["9L1"],
+			hex: ["9L1"],
 			bodyslam: ["9L1"],
 			curse: ["9L1"],
 			destinybond: ["9L1"],
