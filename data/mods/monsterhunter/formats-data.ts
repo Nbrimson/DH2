@@ -772,5 +772,35 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	tigrexgrimclaw: {
 		tier: "MHUU",
-	}
+	},
+	redsioth: {
+		tier: "MHRU",
+	},
+	rukodiora: {
+		tier: "MHOU",
+	},
+	rebidiora: {
+		tier: "MHOU",
+	},
+	pariapuria: {
+		tier: "MHUU",
+	},
+	poborubarumu: {
+		tier: "MHUU",
+	},
+	blinkacuga: {
+		tier: "MHOU",
+	},
+	akuravashimuz: {
+		tier: "MHOU",
+	},
+	khezuz: {
+		tier: "MHRU",
+	},
+	glowstraxrisen: {
+		tier: "MHOU",
+	},
+	nargacugasilverwind: {
+		tier: "MHOU",
+	},
 };
