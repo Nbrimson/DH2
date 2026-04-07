@@ -578,9 +578,9 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			if (this.activeMove && ['knockoff', 'thief', 'switcheroo', 'trick'].includes(this.activeMove.id)) {
 				this.boost({ spe: -1 }, pokemon);
 				this.add('-activate', pokemon, 'item: Honey');
-				return false;
+				return true;
 			}
-			return false;
+			return true;
 		},
 	},
 }
