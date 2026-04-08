@@ -13507,7 +13507,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			blizzard: ["9L1"],
 			bodyslam: ["9L1"],
 			boomburst: ["9L1"],
-			calmmind: ["9L1"],
 			chillingwater: ["9L1"],
 			chillyreception: ["9L1"],
 			confide: ["9L1"],
