@@ -295,6 +295,7 @@ export const Formats: FormatList = [
 	...MetaMons,
 	...MicrometaMafia2,
 	...MicrometaMafia3,
+	...MicrometaMafia4,
 	...MoreBalancedHackmons,
 	...gen9Multiverse,
 	...NaturalSelection,
