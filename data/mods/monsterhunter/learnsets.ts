@@ -8210,7 +8210,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	tzitziyaku: {
 		learnset: {
 			alluringvoice: ["9L1"],
-			storedpower: ["9L1"],
 			attract: ["9L1"],
 			flash: ["9M"],
 			calmmind: ["9L1"],
