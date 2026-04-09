@@ -112,12 +112,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	consumption: {
 		onAfterMoveSecondarySelf(source, target, move) {
 			if (move?.effectType === 'Move' && target?.hp === 0) {
-				this.add('-ability', pokemon, 'Soothing Song');
-				this.heal(source.baseMaxhp / 4, source);
+				this.add('-ability', source, 'Consumption');
+				this.heal(source.baseMaxhp / 3, source);
 			}
 		},
 		name: "Consumption",
-		shortDesc: "Heals 25% HP on KO.",
+		shortDesc: "Heals 33% HP on KO.",
 	},
 	redsoul: {
 		onModifyAtk(atk, pokemon) {
