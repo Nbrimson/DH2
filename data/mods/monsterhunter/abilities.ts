@@ -112,6 +112,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	consumption: {
 		onAfterMoveSecondarySelf(source, target, move) {
 			if (move?.effectType === 'Move' && target?.hp === 0) {
+				this.add('-ability', pokemon, 'Soothing Song');
 				this.heal(source.baseMaxhp / 4, source);
 			}
 		},
@@ -219,8 +220,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.add('-end', target, 'Flicker');
 			},
 		},
+		flags: {breakable: 1},
 		name: "Flicker",
-		shortDesc: "Once per battle, this pokemon dodges any attacking move on it's first active turn.",
+		shortDesc: "Once per battle, this Pokemon dodges any attacking move on it's first active turn.",
 	},
 	aimassist: {
 		onStart(source) {
@@ -1873,7 +1875,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.actions.useMove(reaction, target, source);
 			}
 		},
-		onModifyDamage(damage, source, target, move) {
+		onSourceModifyDamage(damage, source, target, move) {
 			if (move.type === 'Dark') {
 				return this.chainModify(0.5);
 			}

@@ -2463,9 +2463,19 @@ export const Moves: {[moveid: string]: MoveData} = {
 	*/
 	darkvoid: {
 		inherit: true,
-		shortDesc: "Makes the foe(s) drowsy",
+		shortDesc: "Restores the user's HP by 50% of damage dealt. Damage doubled on drowsy foes.",
 		viable: true,
-		accuracy: 80,
+		accuracy: 100,
+		category: "Special",
+		target: "normal",
+		status: null,
+		drain: [1, 2],
+		basePower: 60,
+		onBasePower(basePower, pokemon, target) {
+			if (target.status === 'slp') {
+				return this.chainModify(2);
+			}
+		},
 		onTry(source, target, move) {},
 	},
 	direclaw: {
