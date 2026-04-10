@@ -2467,6 +2467,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		viable: true,
 		accuracy: 100,
 		category: "Special",
+		flags: {protect: 1, mirror: 1, metronome: 1, nosketch: 1},
 		target: "normal",
 		status: null,
 		drain: [1, 2],

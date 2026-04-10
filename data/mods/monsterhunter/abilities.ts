@@ -112,12 +112,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	consumption: {
 		onAfterMoveSecondarySelf(source, target, move) {
 			if (move?.effectType === 'Move' && target?.hp === 0) {
-				this.add('-ability', pokemon, 'Soothing Song');
-				this.heal(source.baseMaxhp / 4, source);
+				this.add('-ability', source, 'Consumption');
+				this.heal(source.baseMaxhp / 3, source);
 			}
 		},
 		name: "Consumption",
-		shortDesc: "Heals 25% HP on KO.",
+		shortDesc: "Heals 33% HP on KO.",
 	},
 	redsoul: {
 		onModifyAtk(atk, pokemon) {
@@ -207,7 +207,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		condition: {
 			duration: 1,
 			onStart(target) {
-				this.add('-start', target, 'ability: Flicker');
+            this.add('-start', target, 'ability: Flicker');
+            this.add('-message', `${target.name} is flickering!`);
+            this.add('-anim', target, 'Double Team', target);
 			},
 			onTryHit(target, source, move) {
 				if (move.category !== 'Status' && target !== source) {
@@ -218,6 +220,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onEnd(target) {
 				target.outFlickered = true;
 				this.add('-end', target, 'Flicker');
+            	this.add('-message', `${target.name} has stopped flickering!`);
 			},
 		},
 		flags: {breakable: 1},

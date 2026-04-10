@@ -8210,7 +8210,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	tzitziyaku: {
 		learnset: {
 			alluringvoice: ["9L1"],
-			storedpower: ["9L1"],
 			attract: ["9L1"],
 			flash: ["9M"],
 			calmmind: ["9L1"],
@@ -13388,6 +13387,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			doomdesire: ["9L1"],
 			dracometeor: ["9L1"],
 			dragonclaw: ["9L1"],
+			voltswitch: ["9L1"],
 			dragonpulse: ["9L1"],
 			dragonrush: ["9L1"],
 			electricterrain: ["9L1"],
@@ -13596,7 +13596,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			sludgewave: ["9L1"],
 			snatch: ["9L1"],
 			substitute: ["9L1"],
-			swordsdance: ["9L1"],
 			tailslap: ["9L1"],
 			taunt: ["9L1"],
 			teleport: ["9L1"],

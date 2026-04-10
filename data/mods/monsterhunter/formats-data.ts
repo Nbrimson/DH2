@@ -354,7 +354,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "MHOU",
 	},
 	sharaishvalda: {
-		tier: "MHOU",
+		tier: "MHUU",
 	},
 	shengaoren: {
 		tier: "MHOU",
@@ -612,7 +612,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "MHUU",
 	},
 	terrataur: {
-		tier: "MHUU",
+		tier: "MHOU",
 	},
 	coralpukei: {
 		tier: "MHUU",
@@ -786,7 +786,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "MHUU",
 	},
 	poborubarumu: {
-		tier: "MHUU",
+		tier: "MHOU",
 	},
 	blinkacuga: {
 		tier: "MHOU",
