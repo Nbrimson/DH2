@@ -207,7 +207,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		condition: {
 			duration: 1,
 			onStart(target) {
-				this.add('-start', target, 'ability: Flicker');
+            this.add('-start', target, 'ability: Flicker');
+            this.add('-message', `${target.name} is flickering!`);
+            this.add('-anim', target, 'Double Team', target);
 			},
 			onTryHit(target, source, move) {
 				if (move.category !== 'Status' && target !== source) {
@@ -218,6 +220,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			onEnd(target) {
 				target.outFlickered = true;
 				this.add('-end', target, 'Flicker');
+            	this.add('-message', `${target.name} has stopped flickering!`);
 			},
 		},
 		flags: {breakable: 1},
