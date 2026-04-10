@@ -1898,6 +1898,70 @@ export const Moves: {[moveid: string]: MoveData} = {
             this.add('-anim', target, "Thunderclap", target);
         },
 	},
+	elenova: {
+		accuracy: 100,
+		basePower: 100,
+		category: "Special",
+		name: "Elenova",
+		shortDesc: "This move's type depends on the secondary type of the user.",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		onModifyType(move, pokemon) {
+			const types = pokemon.getTypes();
+			const secondary = types[1];
+			move.type = secondary || 'Normal';
+		},
+		onPrepareHit(target, source, move) {
+			const types = source.getTypes();
+			const secondary = types[1];
+			this.attrLastMove('[still]');
+			switch (secondary) {
+				case 'Dragon':
+					this.add('-anim', source, "Dragon Pulse", target);
+					break;
+				case 'Fire':
+					this.add('-anim', source, "Mystical Fire", target);
+					break;
+				case 'Ice':
+					this.add('-anim', source, "Ice Beam", target);
+					break;
+				case 'Electric':
+					this.add('-anim', source, "Thunderbolt", target);
+					break;
+				case 'Water':
+					this.add('-anim', source, "Hydro Pump", target);
+					break;
+				default:
+					// No secondary type → Normal animation
+					this.add('-anim', source, "Hyper Voice", target);
+					break;
+			}
+		},
+	},
+	lashingtongue: {
+		accuracy: 100,
+		basePower: 65,
+		category: "Physical",
+		name: "Lashing Tongue",
+		shortDesc: "Deals 2x damage if target is inflicted with a non-volatile status condition.",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, contact: 1},
+		secondary: null,
+		target: "normal",
+		type: "Water",
+		basePowerCallback(pokemon, target, move) {
+			if (target.status || target.hasAbility('comatose')) {
+				this.debug('Lashing Tongue BP doubled from status condition');
+				return move.basePower * 2;
+			}
+			return move.basePower;
+		},
+	},
 	/*
 	Edits
 	*/
@@ -1985,7 +2049,19 @@ export const Moves: {[moveid: string]: MoveData} = {
 		desc: "30% chance to inflict bleed.",
 		shortDesc: "30% chance to inflict bleed.",
 		secondary: {
-			chance: 10,
+			chance: 30,
+			volatileStatus: 'bleeding',
+		},
+	},
+	metalclaw: {
+		inherit: true,
+		basePower: 80,
+		accuracy: 100,
+		pp: 15,
+		desc: "30% chance to inflict bleed.",
+		shortDesc: "30% chance to inflict bleed.",
+		secondary: {
+			chance: 30,
 			volatileStatus: 'bleeding',
 		},
 	},
@@ -2227,6 +2303,15 @@ export const Moves: {[moveid: string]: MoveData} = {
 		inherit: true,
 		accuracy: 100,
 	},
+	ominouswind: {
+		inherit: true,
+		accuracy: 100,
+		basePower: 90,
+		pp: 10,
+		flags: {protect: 1, mirror: 1, metronome: 1, wind: 1},
+		secondary: null,
+		shortDesc: "No additional effect.",
+	},
 	steamroller: {
 		inherit: true,
 		viable: true,
@@ -2290,6 +2375,17 @@ export const Moves: {[moveid: string]: MoveData} = {
 		viable: true,
 		basePower: 110,
 		accuracy: 100,
+	},
+	magnetbomb: {
+		inherit: true,
+		viable: true,
+		accuracy: 100,
+		basePower: 70, 
+		isNonstandard: null,
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Steel') return 1;
+		},
+		shortDesc: "Super effective on Steel.",
 	},
 	steelwing: {
 		inherit: true,
@@ -2367,9 +2463,20 @@ export const Moves: {[moveid: string]: MoveData} = {
 	*/
 	darkvoid: {
 		inherit: true,
-		shortDesc: "Makes the foe(s) drowsy",
+		shortDesc: "Restores the user's HP by 50% of damage dealt. Damage doubled on drowsy foes.",
 		viable: true,
-		accuracy: 80,
+		accuracy: 100,
+		category: "Special",
+		flags: {protect: 1, mirror: 1, metronome: 1, nosketch: 1},
+		target: "normal",
+		status: null,
+		drain: [1, 2],
+		basePower: 60,
+		onBasePower(basePower, pokemon, target) {
+			if (target.status === 'slp') {
+				return this.chainModify(2);
+			}
+		},
 		onTry(source, target, move) {},
 	},
 	direclaw: {

@@ -39,5 +39,37 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "MMM4",
 		doublesTier: "DOU",
 	},
+	sneasler: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	falinks: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	luxray: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	golurk: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	sirfetchd: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	swampert: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	koffing: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	sneasel: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
 
 };
