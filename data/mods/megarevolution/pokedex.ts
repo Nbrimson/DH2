@@ -10,7 +10,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		name: "Junglosaur",
 		types: ["Grass", "Poison"],
 		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 80, atk: 82, def: 83, spa: 100, spd: 100, spe: 80},
+		baseStats: {hp: 100, atk: 102, def: 98, spa: 122, spd: 113, spe: 40},
 		abilities: {0: "Overgrow", H: "Thick Fat"},
 		heightm: 2.4,
 		weightkg: 155.5,
