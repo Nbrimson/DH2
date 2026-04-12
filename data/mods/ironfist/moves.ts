@@ -3774,8 +3774,8 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "self",
 		type: "Water",
 	},
-	floatsamhook: {
-		name: "Floatsam Hook",
+	flotsamhook: {
+		name: "Flotsam Hook",
 		type: "Water",
 		category: "Physical",
 		basePower: 85,
