@@ -13245,6 +13245,7 @@ export const Learnsets: {[speciesid: string]: ModdedLearnsetData} = {
 			whirlpool: ["9L1"],
 			holdhands: ["9L1"],
 			cuddie: ["9L1"],
+			hoenn: ["9L1"],
 		},
 	},
 	upvybones: {
@@ -13529,6 +13530,7 @@ export const Learnsets: {[speciesid: string]: ModdedLearnsetData} = {
 			clangoroussoul: ["9L1"],
 			graveyard: ["9L1"],
 			helpinghand: ["9L1"],
+			hoenn: ["9L1"],
 		},
 	},
 	tlagh: {
