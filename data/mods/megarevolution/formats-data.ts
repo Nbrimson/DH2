@@ -4861,4 +4861,16 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	tortonate: {
 		tier: "OU",
 	},
+	beewark: {
+		tier: "OU",
+	},
+	pigeaether: {
+		tier: "OU",
+	},
+	gorochu: {
+		tier: "OU",
+	},
+	pikaraichu: {
+		tier: "OU",
+	},
 };
