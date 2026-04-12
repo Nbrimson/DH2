@@ -4023,7 +4023,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		shortDesc: "Hits two turns after being used.",
 		pp: 10,
 		priority: 0,
-		flags: { allyanim: 1, metronome: 1, futuremove: 1 },
+		flags: { allyanim: 1, metronome: 1, futuremove: 1, fishing: 1},
 		ignoreImmunity: true,
 		onTry(source, target) {
 			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
@@ -4037,7 +4037,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 					basePower: 120,
 					category: "Special",
 					priority: 0,
-					flags: { allyanim: 1, metronome: 1, futuremove: 1 },
+					flags: { allyanim: 1, metronome: 1, futuremove: 1, fishing: 1},
 					ignoreImmunity: false,
 					effectType: 'Move',
 					type: 'Water',
