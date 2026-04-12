@@ -4864,7 +4864,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	beewark: {
 		tier: "OU",
 	},
-	pigeaether: {
+	pidgeaether: {
 		tier: "OU",
 	},
 	gorochu: {

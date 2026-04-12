@@ -89,13 +89,13 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	pidgeot: {
 		inherit: true,
-		evos: ["Pigeaether"],
+		evos: ["Pidgeaether"],
 		otherFormes: null,
 		formeOrder: null,
 	},
-	pigeaether: {
+	pidgeaether: {
 		num: 2006,
-		name: "Pigeaether",
+		name: "Pidgeaether",
 		types: ["Flying"],
 		baseStats: {hp: 84, atk: 95, def: 80, spa: 100, spd: 80, spe: 110},
 		abilities: {0: "No Guard", 1: "Wind Rider", H: "Air Lock"},

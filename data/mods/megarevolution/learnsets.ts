@@ -594,7 +594,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			xscissor: ["9L1"],
 		},
 	},
-	pigeaether: {
+	pidgeaether: {
 		learnset: {
 			aerialace: ["9L1"],
 			aeroblast: ["9L1"],
