@@ -45,6 +45,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 
 	//slate 1
 	silcoonsexactmovepool: {
+		viable: false,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -328,6 +329,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		},
 	},
 	silcoonblast: {
+		viable: false,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -352,6 +354,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		contestType: "Beautiful",
 	},
 	gofish: {
+		viable: false,
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
@@ -1079,6 +1082,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
     },
 	cuddie: {
 		accuracy: true,
+		viable: false,
 		basePower: 0,
 		category: "Status",
 		name: "cuddIe",
@@ -1100,6 +1104,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		contestType: "Cute",
 	},
 	feebasproshops: {
+		viable: false,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -1348,6 +1353,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "normal",
 	},
 	frigidterrain: {
+		viable: false,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -1504,6 +1510,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "normal",
 	},
 	supermushroom: {
+		viable: false,
 		name: "Super Mushroom",
 		type: "Grass",
 		category: "Status",
@@ -1753,6 +1760,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	genderaffirmingcare: {
 		name: "Gender Affirming Care",
+		viable: false,
 		type: "Silly",
 		category: "Status",
 		basePower: 0,
@@ -1784,6 +1792,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	liondeluge: {
 		name: "Lion Deluge",
+		viable: false,
 		type: "Electric",
 		category: "Status",
 		basePower: 0,
@@ -1921,6 +1930,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	blindingsquirter: {
 		name: "Blinding Squirter",
+		viable: false,
 		type: "Lemon",
 		category: "Status",
 		basePower: 0,
@@ -2068,6 +2078,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	corrosivegus: {
 		name: "Corrosive Gus",
+		viable: false,
 		type: "Normal",
 		category: "Status",
 		basePower: 0,
@@ -2576,6 +2587,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "normal",
 	},
 	fertilesoil: {
+		viable: false,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -2667,6 +2679,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	chaospotion: {
 		name: "Chaos Potion",
+		viable: false,
 		type: "Psychic",
 		category: "Status",
 		basePower: 0,
@@ -2717,6 +2730,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	graveyard: {
 		name: "Graveyard",
+		viable: false,
 		type: "Ghost",
 		category: "Status",
 		basePower: 0,
@@ -2766,6 +2780,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		},
 	},
 	citrusbomb: {
+		viable: false,
 		accuracy: 85,
 		basePower: 60,
 		category: "Special",
@@ -3120,6 +3135,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	energytank: {
 		name: "Energy Tank",
+		viable: false,
 		type: "Steel",
 		category: "Status",
 		basePower: 0,
@@ -3774,8 +3790,8 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "self",
 		type: "Water",
 	},
-	floatsamhook: {
-		name: "Floatsam Hook",
+	flotsamhook: {
+		name: "Flotsam Hook",
 		type: "Water",
 		category: "Physical",
 		basePower: 85,
@@ -3837,6 +3853,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	catchysong: {
 		name: "Catchy Song",
+		viable: false,
 		type: "Silly",
 		category: "Status",
 		basePower: 0,
@@ -3920,6 +3937,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	acidrain: {
 		name: "Acid Rain",
+		viable: false,
 		type: "Lemon",
 		category: "Status",
 		basePower: 0,
@@ -4034,6 +4052,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		contestType: "Clever",
 	},
 	stealthanvils: {
+		viable: false,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -4175,6 +4194,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	greatestachievement: {
 		name: "Greatest Achievement",
+		viable: false,
 		type: "Silly",
 		category: "Status",
 		basePower: 0,
