@@ -3062,7 +3062,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			endure: ["9M"],
 			facade: ["9M"],
 			feint: ["9M"],
-			filletaway: ["9M"],
 			fly: ["9M"],
 			flyingpress: ["9M"],
 			furyattack: ["9L8"],
@@ -3604,7 +3603,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			hyperspacefury: ["9M"],
 			hypervoice: ["9M"],
 			imprison: ["9M"],
-			leechseed: ["9M"],
 			meanlook: ["9L14"],
 			memento: ["9L21"],
 			mistyterrain: ["9M"],
@@ -3911,6 +3909,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	vizutsune: {
 		learnset: {
 			fierydance: ["9L1"],
+			moonblast: ["9L1"],
 			blastburn: ["9M"],
 			bodyslam: ["9M"],
 			gracefulsweep: ["9L1"],
@@ -4457,6 +4456,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	ahtalka: {
 		learnset: {
 			assurance: ["9L1"],
+			uturn: ["9L1"],
 			swordsdance: ["9L1"],
 			autotomize: ["9L1"],
 			irondefense: ["9L1"],
@@ -8217,7 +8217,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			aurasphere: ["9L1"],
 			cloakingglow: ["9L1"],
 			charm: ["9L1"],
-			psychocrush: ["9L1"],
 			coaching: ["9L1"],
 			confide: ["9L1"],
 			confuseray: ["9L1"],
@@ -8229,7 +8228,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			drainingkiss: ["9L1"],
 			drillpeck: ["9L1"],
 			dualwingbeat: ["9L1"],
-			eeriespell: ["9L1"],
 			encore: ["9L1"],
 			endeavor: ["9L1"],
 			fairylock: ["9L1"],
@@ -8603,7 +8601,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	yamatsukami: {
 		learnset: {
-			defendorder: ["9L1"],
 			growth: ["9L1"],
 			stockpile: ["9L1"],
 			amnesia: ["9L1"],
@@ -11945,7 +11942,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			dive: ["9L1"],
 			endure: ["9L1"],
 			facade: ["9L1"],
-			firelash: ["9L1"],
+			bitterblade: ["9L1"],
 			flail: ["9L1"],
 			flipturn: ["9L1"],
 			foulplay: ["9L1"],
@@ -11968,7 +11965,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			rollout: ["9L1"],
 			round: ["9L1"],
 			scaryface: ["9L1"],
-			shellsmash: ["9L1"],
 			slash: ["9L1"],
 			smackdown: ["9L1"],
 			snore: ["9L1"],
