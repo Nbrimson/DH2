@@ -12636,7 +12636,6 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	ashshanlung: {
 		learnset: {
-			amnesia: ["9L1"],
 			curse: ["9L1"],
 			attract: ["9L1"],
 			bulkup: ["9L1"],
