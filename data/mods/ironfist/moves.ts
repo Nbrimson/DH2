@@ -64,7 +64,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "self",
 		type: "Bug",
 		desc: "Uses Tackle, String Shot, Poison Sting, Bug Bite, and Iron Defense.",
-		shortDesc: "Uses Tackle, String Shot, Poison Sting, Bug Bite, and Iron Defense.",
+		shortDesc: "Uses Silcoon's vanilla movepool.",
 	},
   	pog: {
 		accuracy: 100,
@@ -177,7 +177,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "normal",
 		type: "Fairy",
 		desc: "Usually moves first. 10% chance to lower target's Speed by 1.",
-		shortDesc: "Usually moves first. 10% chance to lower target's Speed by 1.",
+		shortDesc: "Usually moves first. 10% target's Speed -1.",
 		contestType: "Cool",
 	},
   	fishingminigame: {
@@ -1306,7 +1306,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		category: "Status",
 		name: "Fish and Dip",
 		desc: "Sets 1 Fishing Token on the user's side. User switches out.",
-		shortDesc: "Sets 1 Fishing Token on the user's side. User switches out.",
+		shortDesc: "+1 Fishing Token. User switches out.",
 		pp: 10,
 		priority: 0,
 		flags: {metronome: 1, fishing: 1},
@@ -1967,7 +1967,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		accuracy: true,
 		pp: 10,
 		desc: "User switches out. Incoming Diamond Hand: 30% heal.",
-		shortDesc: "User switches out. Incoming Diamond Hand: 30% heal.",
+		shortDesc: "User switches. Incoming Diamond Hand: 30% heal.",
 		priority: -2,
 		flags: {metronome: 1},
 		onTry(source) {
@@ -2058,7 +2058,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		accuracy: 100,
 		pp: 10,
 		desc: "50% chance to lower target's Def by 1 stage, 100% if target healed.​",
-		shortDesc: "50% chance to lower target's Def by 1 stage, 100% if target healed.​",
+		shortDesc: "50% chance for -1 Def, 100% if target healed.​​",
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
 		onPrepareHit(target, pokemon, move) {
@@ -2186,10 +2186,10 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		basePower: 0,
 		accuracy: true,
 		pp: 5,
-		desc: "Raises Attack, Sp. Attack, Speed, accuracy by 1. User loses 1/8 HP.",
-		shortDesc: "Raises Attack, Sp. Attack, Speed, accuracy by 1. User loses 1/8 HP.",
+		desc: "Raises Atk/SpA/Spe/acc by 1. User loses 1/8 HP.",
+		shortDesc: "Raises the user's Attack, Sp. Attack, Speed, accuracy by 1, but user takes 1/8 HP in damage.",
 		priority: 0,
-		flags: {snatch: 1, metronome: 1, contact: 1},
+		flags: {snatch: 1, metronome: 1},
 		onPrepareHit(target, pokemon, move) {
 			this.attrLastMove('[still]');
 			this.add('-anim', pokemon, "Bulk Up", target);
@@ -3438,7 +3438,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		accuracy: 100,
 		pp: 5,
 		desc: "Hits all adjacent Pokemon. User faints and gains 3 Fishing Tokens.",
-		shortDesc: "Hits all adjacent Pokemon. User faints and gains 3 Fishing Tokens.",
+		shortDesc: "User faints and gains 3 Fishing Tokens.",
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
 		selfdestruct: "always",
@@ -3902,8 +3902,8 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		basePower: 0,
 		category: "Status",
 		name: "Bloom Desire",
-		desc: "2 turns: 2/3 of user's max HP is restored, cure status.",
-		shortDesc: "2 turns: 2/3 of user's max HP is restored, cure status.",
+		desc: "2 turns: 2/3 user's max HP is restored, cure status.",
+		shortDesc: "2 turns: 2/3 user's max HP is restored, cure status.",
 		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, heal: 1, metronome: 1 },
@@ -4117,8 +4117,8 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		basePower: 95,
 		accuracy: true,
 		pp: 10,
-		desc: "1.2x power in weather or terrain. Physical if Atk > SpA.",
-		shortDesc: "1.2x power in weather or terrain. Physical if Atk > SpA.",
+		desc: "1.2x power in weather/terrain. Physical if Atk > SpA.",
+		shortDesc: "1.2x power in weather/terrain. Physical if Atk > SpA.",
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
 		onPrepareHit(target, pokemon, move) {
@@ -4175,7 +4175,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		pp: 69,
 		noPPBoosts: true,
 		desc: "Changes the targets's primary type to Flying and adds the Bird volatile.",
-		shortDesc: "Changes the targets's primary type to Flying and adds Bird.",
+		shortDesc: "Targets's primary type = Flying, adds Bird.",
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1, contact: 1, disaster: 1, wind: 1},
 		onPrepareHit(target, pokemon, move) {
