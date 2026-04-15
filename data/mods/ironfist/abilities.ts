@@ -1272,7 +1272,9 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		onResidualSubOrder: 2,
 		onResidual(pokemon) {
 			this.boost({spe: -1});
-			if(pokemon.boosts['spe'] === -6 && pokemon.status !== 'frz') {
+		},
+		onUpdate(pokemon) {
+			if (pokemon.boosts['spe'] === -6 && pokemon.status !== 'frz') {
 				pokemon.cureStatus();
 				pokemon.setStatus('frz');
 			}

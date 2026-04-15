@@ -65,6 +65,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		type: "Bug",
 		desc: "Uses Tackle, String Shot, Poison Sting, Bug Bite, and Iron Defense.",
 		shortDesc: "Uses Silcoon's vanilla movepool.",
+		callsMove: true,
 	},
   	pog: {
 		accuracy: 100,
