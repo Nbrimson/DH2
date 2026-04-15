@@ -2462,7 +2462,7 @@ export const Pokedex: {[k: string]: ModdednameData} = {
 		name: "Rukodiora",
 		types: ["Dragon", "Steel"],
 		baseStats: {hp: 98, atk: 120, def: 88, spa: 88, spd: 118, spe: 98},
-		abilities: {0: "Solid Rock", H: "Magnet Pull"},
+		abilities: {0: "Solid Rock", H: "Magnetic"},
 		weightkg: 150.0,
 		tags: ["Elder Dragon"],
 	},
