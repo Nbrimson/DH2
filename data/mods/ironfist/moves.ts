@@ -1559,6 +1559,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	fisheater: {
 		accuracy: true,
+		viable: false,
 		basePower: 0,
 		category: "Status",
 		name: "Fish Eater",
@@ -1592,6 +1593,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	fishingterrain: {
 		accuracy: true,
+		viable: false,
 		basePower: 0,
 		category: "Status",
 		name: "Fishing Terrain",
@@ -2620,6 +2622,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	epicbeam: {
 		name: "Epic Beam",
+		viable: false,
 		type: "Ice",
 		category: "Status",
 		basePower: 0,
