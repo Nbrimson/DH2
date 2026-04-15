@@ -218,7 +218,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		flags: {breakable: 1},
 		name: "Magnetic",
-		shortDesc: "This Pokemon draws Steel moves to itself to raise it's Atk by 1; Ground Immunity.",
+		shortDesc: "This Pokemon draws Steel moves to itself to raise it's Atk by 1; Steel Immunity.",
 	},
 	flicker: {
 		onStart(pokemon) {
