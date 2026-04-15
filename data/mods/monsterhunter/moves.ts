@@ -2114,7 +2114,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	infernalparade: {
 		inherit: true,
-		basePower: 90,
+		basePower: 65,
 	},
 	toxicthread: {
 		inherit: true,
