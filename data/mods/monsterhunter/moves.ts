@@ -2130,6 +2130,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	moonblast: {
 		inherit: true,
+		basePower: 90,
 		secondary: {
 			chance: 10,
 			boosts: {
@@ -2253,6 +2254,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 	},
+	gigatonhammer: {
+		inherit: true,
+		basePower: 150,
+	},
 	paraboliccharge: {
 		inherit: true,
 		viable: true,
@@ -2261,10 +2266,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 	seedbomb: {
 		inherit: true,
 		basePower: 85,
-	},
-	moonblast: {
-		inherit: true,
-		basePower: 90,
 	},
 	tropkick: {
 		inherit: true,
@@ -2840,14 +2841,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	bittermalice: {
 		inherit: true,
-		basePower: 60,
+		basePowerCallback(pokemon, target, move) {
+			if (target.status || target.hasAbility('comatose')) return move.basePower * 2;
+			return move.basePower;
+		},
+		basePower: 65,
 		pp: 15,
 		secondary: {
 			chance: 30,
 			status: 'frz',
 		},
 		desc: "30% chance to frostbite the target.",
-		shortDesc: "30% chance to frostbite the target.",
+		shortDesc: "30% frostbite. 2x power if target is already statused.",
 	},
 	bleakwindstorm: {
 		inherit: true,
