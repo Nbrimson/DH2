@@ -213,7 +213,7 @@ export const Formats: FormatData[] = [
 		ruleset: ['Standard NatDex', 'Data Mod', 'Mega Data Mod', 'Status Mod', 'OHKO Clause', 'Evasion Clause', 
 			'Species Clause', 'Terastal Clause'],
 		banlist: [ 'Normalium Z', 'Fairium Z', 'Fightinium Z', 'Firium Z', 'Flyinium Z', 'Darkinium Z', 'Dragonium Z', 'Buginium Z', 'Waterium Z', 'Electrium Z', 'Ghostium Z', 'Grassium Z',
-			'Groundium Z', 'Icium Z', 'Poisonium Z', 'Psychium Z', 'Rockium Z', 'Steelium Z',  'Shed Tail', 'Baton Pass', 'Lagombite', 'Bariothite', "Ice-Armor",
+			'Groundium Z', 'Icium Z', 'Poisonium Z', 'Psychium Z', 'Rockium Z', 'Steelium Z',  'Shed Tail', 'Baton Pass', "Ice-Armor",
 			'Shagaru Magala + Strength Sap', 'Garugite', 'Magnamalite', 'Mizutsunite', 'Lagombite', 'Harudomerite', 'Risenite-G', 'Astalite', 'Kirinite', 'Uragaanite', 'Daimyite', 'Crimson Gem', 'White Gem', 'Rathalosite',
 			'Zinogrite', 'Arzurite', 'Bariothite', 'Light Clay', 'King\'s Rock', 'Razor Fang'],
 		onBegin() {
