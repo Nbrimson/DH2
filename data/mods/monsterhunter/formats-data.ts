@@ -384,7 +384,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "MHUU",
 	},
 	tetranadon: {
-		tier: "MHUU",
+		tier: "MHRU",
 	},
 	tetsucabra: {
 		tier: "MHRU",
